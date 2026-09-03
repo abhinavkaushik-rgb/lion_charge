@@ -1,4 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
+  # 1. 301 Redirect direct requests for index.html to https://lioncharge.tech/
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html(\?[^\ ]*)?\ HTTP/ [NC]
+  RewriteRule ^index\.html$ https://lioncharge.tech/ [R=301,L]
+
+  # 2. 301 Redirect www.lioncharge.tech to https://lioncharge.tech/
+  RewriteCond %{HTTP_HOST} ^www\.lioncharge\.tech$ [NC]
+  RewriteRule ^(.*)$ https://lioncharge.tech/$1 [R=301,L]
+
+  # 3. 301 Redirect HTTP to HTTPS for lioncharge.tech
+  RewriteCond %{HTTPS} !on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+  RewriteRule ^(.*)$ https://lioncharge.tech/$1 [R=301,L]
+</IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php82” package as the default “PHP” programming language.
