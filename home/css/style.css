@@ -109,6 +109,7 @@ body {
 .bold { font-weight: 700 !important; }
 
 p { font-size: 16px; line-height: 28px; }
+h1 { font-size: 36px; line-height: 40px; font-weight: 700; color: #000; }
 h2 { font-size: 36px; line-height: 40px; font-weight: 700; color: #000; }
 
 header {
@@ -330,7 +331,7 @@ footer a:hover { color: #02ad6f !important; }
 .mobility_item.time p { font-size: 32px; line-height:42px; }
 .ScanQR_Code, .electric_mobility{ margin-top: 110px; }
 .ScanQR_Code { margin-top: 120px; }
-.banner h2 {
+.banner h1 {
     color: #353535;
     /*font-size: 60px;
     line-height: 60px;
@@ -340,7 +341,7 @@ footer a:hover { color: #02ad6f !important; }
     line-height: 40px;
     margin-bottom: 30px;
 }
-.banner h2 span { color: #00a972; }
+.banner h1 span { color: #00a972; }
 .tabs { 
     display: flex;
     align-items: flex-end;
@@ -439,7 +440,7 @@ footer a:hover { color: #02ad6f !important; }
 }
 .ev_chargingSolutions p {
 }
-.contact_us h2 { margin-bottom: 25px; }
+.contact_us h1 { margin-bottom: 25px; }
 .contact_us {
     background: url("../images/bg_contact.png") no-repeat center top;
     background-size: cover;
@@ -479,7 +480,7 @@ select.form-control {
 .form label.error { color:red; font-weight:500; padding: 5px 0px 0px 0px; font-size:14px; }
 
 .pos_center { width:100%; position:absolute; left:0px; top:50%; transform:translateY(-50%); z-index:9; }
-.contact_us h2 {
+.contact_us h1 {
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -667,7 +668,7 @@ a.common_btn:hover { background: #000; color:#fff; transition: 0.3s; }
         font-size: 19px;
         line-height: 25px;
     }
-    .banner h2 { margin-bottom: 20px; }
+    .banner h1 { margin-bottom: 20px; }
     .banner img { max-width: 100%; }
     .ScanQR_Code, .electric_mobility { margin-top: 30px; }
     .mob_flex_colmn { flex-direction: column; }
@@ -776,7 +777,7 @@ a.common_btn:hover { background: #000; color:#fff; transition: 0.3s; }
     .parking_lot { margin-top: 10px; }
 
     .contact_us { background-size:100%; padding:50px 15px 30px 15px; }
-    .contact_us h2 { font-size: 22px; line-height:30px; margin-bottom:15px; }
+    .contact_us h1 { font-size: 22px; line-height:30px; margin-bottom:15px; }
     .form { margin-top: 15px; margin-bottom:40px; }
     .form_input .form-label { font-size:13px; margin-bottom:10px; }
     .form-control { font-size:13px; height: 36px; }
@@ -961,7 +962,7 @@ a.common_btn:hover { background: #000; color:#fff; transition: 0.3s; }
 /*franchise*/
 
 /*calculator*/
-.calculator_page .banner h2 {
+.calculator_page .banner h1 {
     margin-bottom: 20px;
 }
 #calculator {
@@ -1507,7 +1508,7 @@ a.common_btn:hover { background: #000; color:#fff; transition: 0.3s; }
 .setUp_Evcharges_Content .common_btn { margin-top: 10px; }
 .AI-powered-EvCharging-solutions { margin-top: 0px;background-color: #000;color: #fff;padding: 100px; position: relative;}
 .AI-powered-EvCharging-solutions .container { position:relative; z-index:9; }
-.AI-powered-EvCharging-solutions h2 { color: #fff; }
+.AI-powered-EvCharging-solutions h1 { color: #fff; }
 .content-AI { width: 100%;max-width: 800px;margin: 0px auto;padding: 0px 50px; }
 .content-AI p { font-size: 20px;line-height: 28px;margin-top: 30px; }
 .EV_charge_buttons { margin-top: 50px; }
