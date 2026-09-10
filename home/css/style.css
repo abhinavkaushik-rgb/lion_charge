@@ -204,6 +204,70 @@ header li ul li:last-child { border:0px; }
 /*main { margin-top: 160px; }*/
 main { margin-top: 150px; }
 
+/* ===== Breadcrumb Navigation ===== */
+.breadcrumb_wrap {
+    width: 100%;
+    float: left;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 0;
+}
+.breadcrumb_wrap .container { }
+nav.lc_breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+nav.lc_breadcrumb ol {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav.lc_breadcrumb ol li {
+    display: inline-flex;
+    align-items: center;
+    color: #888;
+    font-size: 13px;
+    line-height: 1.4;
+}
+nav.lc_breadcrumb ol li a {
+    color: #555 !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+nav.lc_breadcrumb ol li a:hover {
+    color: #02ad6f !important;
+}
+nav.lc_breadcrumb ol li.breadcrumb_sep {
+    margin: 0 8px;
+    color: #bbb;
+    font-size: 11px;
+    user-select: none;
+}
+nav.lc_breadcrumb ol li.breadcrumb_current {
+    color: #02ad6f;
+    font-weight: 600;
+}
+@media (max-width: 576px) {
+    nav.lc_breadcrumb ol li {
+        font-size: 12px;
+    }
+    .breadcrumb_wrap {
+        padding: 8px 0;
+    }
+}
+/* ===== End Breadcrumb ===== */
+
 
 
 #Home_Contact {

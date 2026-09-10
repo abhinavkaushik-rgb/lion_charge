@@ -69,6 +69,26 @@
 	  ]
 	}
 	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Home",
+	      "item": "https://lioncharge.tech/"
+	    },
+	    {
+	      "@type": "ListItem",
+	      "position": 2,
+	      "name": "Contact Us",
+	      "item": "https://lioncharge.tech/contact-us.html"
+	    }
+	  ]
+	}
+	</script>
 </head>
 <body>
 
@@ -187,6 +207,20 @@
 
 
 	<main>
+
+		<!-- Breadcrumb Navigation -->
+		<div class="breadcrumb_wrap">
+		  <div class="container">
+		    <nav class="lc_breadcrumb" aria-label="Breadcrumb">
+		      <ol>
+		        <li><a href="https://lioncharge.tech/">Home</a></li>
+		        <li class="breadcrumb_sep" aria-hidden="true">&#8250;</li>
+		        <li class="breadcrumb_current" aria-current="page">Contact Us</li>
+		      </ol>
+		    </nav>
+		  </div>
+		</div>
+		<!-- End Breadcrumb -->
 
 		<section id="Home_Contact" class="no_bg">
 			<div class="container">

@@ -65,6 +65,26 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://lioncharge.tech/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Invest & Earn",
+        "item": "https://lioncharge.tech/invest-and-earn.html"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -191,6 +211,20 @@
 
 
   <main class="franchise_page">
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb_wrap">
+      <div class="container">
+        <nav class="lc_breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="https://lioncharge.tech/">Home</a></li>
+            <li class="breadcrumb_sep" aria-hidden="true">&#8250;</li>
+            <li class="breadcrumb_current" aria-current="page">Invest &amp; Earn</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Breadcrumb -->
 
     <section class="banner txc">
       <div class="banner_top animated fadeIn slow">
