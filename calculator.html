@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Carbon Emissions Estimator | LionCharge</title>
+    <title>EV Charging Savings Calculator | LionCharge</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="keywords" content="" />
-    <meta name="description" content="We provide modern electric vehicle charging systems, At LionCharge we are committed to making EV fast-charging accessible and easy to operate to build a cleaner and greener India." />
+    <meta name="description" content="Estimate the emissions saved, space required, load needed, and revenue potential of installing EV chargers at your property with LionCharge's free calculator." />
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,58 @@
       gtag('config', 'G-W1XRRKNSSH');
     </script>
 
+    <link rel="canonical" href="https://lioncharge.tech/calculator.html" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LionCharge",
+      "legalName": "LionCharge E-Mobility Private Limited",
+      "url": "https://lioncharge.tech/",
+      "logo": "https://lioncharge.tech/home/images/Logo.png",
+      "description": "Estimate the emissions saved, space required, load needed, and revenue potential of installing EV chargers at your property with LionCharge's free calculator.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No 171, Rd No 13, Jubilee Hills",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "postalCode": "500033",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-7995015483",
+        "contactType": "customer support",
+        "email": "support@lioncharge.tech"
+      },
+      "sameAs": [
+        "https://www.facebook.com/lionchargeev",
+        "https://www.instagram.com/lionchargeev/",
+        "https://www.youtube.com/channel/UC9H_1byaMZrG0JsYjh_R0eg",
+        "https://www.linkedin.com/company/lionchargeev/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://lioncharge.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculator",
+          "item": "https://lioncharge.tech/calculator.html"
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>
@@ -45,7 +97,7 @@
       <div class="container-fluid">
         <div class="row d_flex">
           <div class="col-md-3 col-xs-5">
-            <a href="index.html"><img src="home/images/Logo.png" width="65" class="logo"></a>
+            <a href="https://lioncharge.tech/"><img src="home/images/Logo.png" alt="Logo" width="65" class="logo"></a>
           </div>
           <div class="col-md-9 d-none d-sm-block">
             <ul class="fr">
@@ -138,10 +190,10 @@
       <div class="fw">
         <h6 class="semi_bold">Follow Us</h6>
         <div class="social_links">
-          <a href="https://www.facebook.com/lionchargeev" target="_blank"><img src="home/images/ic_facebook_white.png" width="32" alt=""></a>
-          <a href="https://www.instagram.com/lionchargeev/" target="_blank"><img src="home/images/ic_instagram_white.png" width="32" alt=""></a>
-          <a href="https://www.youtube.com/channel/UC9H_1byaMZrG0JsYjh_R0eg" target="_blank"><img src="home/images/ic_youtube_white.png" width="32" alt=""></a>
-          <a href="https://www.linkedin.com/company/lionchargeev/" target="_blank"><img src="home/images/ic_linkedin_white.png" width="32" alt=""></a>
+          <a href="https://www.facebook.com/lionchargeev" target="_blank"><img src="home/images/ic_facebook_white.png" width="32" alt="ic_facebook_white"></a>
+          <a href="https://www.instagram.com/lionchargeev/" target="_blank"><img src="home/images/ic_instagram_white.png" width="32" alt="ic_instagram_white"></a>
+          <a href="https://www.youtube.com/channel/UC9H_1byaMZrG0JsYjh_R0eg" target="_blank"><img src="home/images/ic_youtube_white.png" width="32" alt="ic_youtube_white"></a>
+          <a href="https://www.linkedin.com/company/lionchargeev/" target="_blank"><img src="home/images/ic_linkedin_white.png" width="32" alt="ic_linkedin_white"></a>
         </div>
       </div>
     </div>
@@ -149,11 +201,25 @@
 
     <main class="calculator_page">
 
+      <!-- Breadcrumb Navigation -->
+      <div class="breadcrumb_wrap">
+        <div class="container">
+          <nav class="lc_breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="https://lioncharge.tech/">Home</a></li>
+              <li class="breadcrumb_sep" aria-hidden="true">&#8250;</li>
+              <li class="breadcrumb_current" aria-current="page">Calculator</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Breadcrumb -->
+
       <section class="banner">
         <div class="container">
-          <h2 class="animated fadeInUp">
+          <h1 class="animated fadeInUp">
           Carbon Emissions Estimator
-          </h2>
+          </h1>
           <p class="common_text big">
             Know more on how EV chargers can add value to your property.
           </p>
@@ -183,7 +249,7 @@
               <ul>
                 <li>
                   <div class="left_img">
-                    <img src="images/calculator/icon-01.png">
+                    <img src="images/calculator/icon-01.png" alt="icon-01">
                   </div>
                   <div class="right_disc">
                     <h5><span id="emission_saved">0</span> <span id="kgs_tonnes">Kgs</span></h5>
@@ -194,7 +260,7 @@
                 </li>
                 <li>
                   <div class="left_img">
-                    <img src="images/calculator/icon-02.png">
+                    <img src="images/calculator/icon-02.png" alt="icon-02">
                   </div>
                   <div class="right_disc">
                     <h5><span id="area_required">0</span> Sq.ft</h5>
@@ -205,7 +271,7 @@
                 </li>
                 <li>
                   <div class="left_img">
-                    <img src="images/calculator/icon-03.png">
+                    <img src="images/calculator/icon-03.png" alt="icon-03">
                   </div>
                   <div class="right_disc">
                     <h5><span id="amp_load_required">0</span> Amps</h5>
@@ -216,7 +282,7 @@
                 </li>
                 <li>
                   <div class="left_img">
-                    <img src="images/calculator/icon-04.png">
+                    <img src="images/calculator/icon-04.png" alt="icon-04">
                   </div>
                   <div class="right_disc">
                     <h5><span id="petrol_revenue">0</span> Rs</h5>
@@ -243,7 +309,7 @@
       <div class="container">
         <div class="row d_flex">
           <div class="col-md-3 col-xs-12 footer_left">
-            <a href="index.html"><img src="home/images/Logo.png" width="138" class="footer_logo"></a>
+            <a href="https://lioncharge.tech/"><img src="home/images/Logo.png" alt="logo" width="138" class="footer_logo"></a>
           </div>
           <div class="col-md-6 col-xs-12 txc">
             <ul class="txl">
@@ -276,10 +342,10 @@
             <div class="fr">
               <h6 class="semi_bold">Follow Us</h6>
               <div class="social_links">
-                <a href="https://www.facebook.com/lionchargeev" target="_blank"><img src="home/images/ic_facebook.png" width="32" alt=""></a>
-                <a href="https://www.instagram.com/lionchargeev/" target="_blank"><img src="home/images/ic_instagram.png" width="32" alt=""></a>
-                <a href="https://www.youtube.com/channel/UC9H_1byaMZrG0JsYjh_R0eg" target="_blank"><img src="home/images/ic_youtube.png" width="32" alt=""></a>
-                <a href="https://www.linkedin.com/company/lionchargeev/" target="_blank"><img src="home/images/ic_linkedin.png" width="32" alt=""></a>
+                <a href="https://www.facebook.com/lionchargeev" target="_blank"><img src="home/images/ic_facebook.png" width="32" alt="ic_facebook"></a>
+                <a href="https://www.instagram.com/lionchargeev/" target="_blank"><img src="home/images/ic_instagram.png" width="32" alt="ic_instagram"></a>
+                <a href="https://www.youtube.com/channel/UC9H_1byaMZrG0JsYjh_R0eg" target="_blank"><img src="home/images/ic_youtube.png" width="32" alt="ic_youtube"></a>
+                <a href="https://www.linkedin.com/company/lionchargeev/" target="_blank"><img src="home/images/ic_linkedin.png" width="32" alt="ic_linkedin"></a>
               </div>
             </div>
           </div>
